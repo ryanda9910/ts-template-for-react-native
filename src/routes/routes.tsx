@@ -22,23 +22,29 @@ const MainApp = () => {
         component={Home}
         options={{
           tabBarLabel: 'Home',
-          tabBarIcon: ({color}) => <Icon name="md-home" color={color} />,
+          tabBarIcon: ({color}) => (
+            <Icon name="md-home" color={color} size={25} />
+          ),
         }}
       />
       <TabStack.Screen
         name="Profile"
         component={Profile}
         options={{
-          tabBarLabel: 'Home',
-          tabBarIcon: ({color}) => <Icon name="md-home" color={color} />,
+          tabBarLabel: 'Profile',
+          tabBarIcon: ({color}) => (
+            <Icon name="md-person" color={color} size={25} />
+          ),
         }}
       />
       <TabStack.Screen
         name="About"
         component={About}
         options={{
-          tabBarLabel: 'Home',
-          tabBarIcon: ({color}) => <Icon name="md-home" color={color} />,
+          tabBarLabel: 'About',
+          tabBarIcon: ({color}) => (
+            <Icon name="md-information" color={color} size={25} />
+          ),
         }}
       />
     </TabStack.Navigator>
